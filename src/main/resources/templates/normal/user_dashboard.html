@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8"/>
+<title>this is home page</title>
+</head>
+<body>
+	<section>
+	<div class="container">
+		<div class="card">
+			<div class="card-body my-5">
+				<div class="container text-center">
+					<img style="height: 200px;" src="/img/contact_logo.png">
+				</div>
+				
+				<h1 class="text-center mt-2 text-secondary fst-italic fw-light">
+					Start Adding Your contact on cloud..
+				</h1>
+				
+				<a th:href="@{/user/add-contact}" class="container-fluid btn btn-primary btn-block text-uppercase mt-4">
+					add new contact
+				</a>
+					
+			</div>
+		</div>
+	</div>
+	</section>
+</body>
+</html>
+
+
+<!-- 
+	<!doctype html>
+	<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+	<head>
+	<meta charset="UTF-8"/>
+	<title>this is home page</title>
+	</head>
+	<body>
+		<section>
+		<h1>Welcome you are a normal user</h1>
+		<h1>this is a private dashboard</h1>
+		<h1>User Name <span th:text="${user.name}"></span></h1>
+		<h1>User Email <span th:text="${user.email}"></span></h1>
+		</section>
+	</body>
+	</html>	
+	
+-->
